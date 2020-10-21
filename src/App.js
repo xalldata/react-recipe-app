@@ -52,7 +52,7 @@ function App() {
                 onChange={handleChange}
               />
               <button className="search-button" type="submit" onClick={getSearch} >
-                <Link to={'/'} className="btn" >Search</Link>
+                <Link to={'/react-recipe-app'} className="btn" >Search</Link>
               </button>
             </form>
           </div>
@@ -61,7 +61,7 @@ function App() {
           
       {recipes ? recipes.map(recipe => (  
         <Route
-          path='/' exact
+          path='/react-recipe-app' exact
           render={(props) => (
             <Recipes {...props} key={recipe.idMeal}
           recipe = {recipe}
@@ -73,7 +73,7 @@ function App() {
             />
           )) : <h1>Sorry, there's no recipe with under that name</h1>}
         </div>
-          <Route path='/details/:id' component={Details} />             
+          <Route path='/react-recipe-app/details/:id' component={Details} />             
     </div>
     </Router>
   );

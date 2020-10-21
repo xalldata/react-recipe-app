@@ -31,7 +31,7 @@ const Recipes = ({ recipe, title, category, instructions, image }) => {
                     <h1 className="title-recipe">{title}  </h1>
                     <p>Category: {category}</p>
                     <button className="view-recipe">
-                        <Link to={`details/${recipe.idMeal}`} className="view-recipe-btn" >View Recipe</Link>
+                        <Link to={`/react-recipe-app/details/${recipe.idMeal}`} className="view-recipe-btn" >View Recipe</Link>
                         {/**<Link to={`/recipe/${recipe.idMeal`} >View Recipe</Link> */}
                     </button>
                     {/** <p>{instructions} </p> */}
