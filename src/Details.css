@@ -1,0 +1,30 @@
+.details-page {
+  width: 70%;
+  margin: 0 auto;
+  /*background-color: rgb(218, 238, 245);*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredients {
+  /*background-color: lightcoral;*/
+  width: 100%;
+  padding: 10px 250px;
+}
+
+.ingredients ul {
+  list-style: none;
+}
+
+.recipe-name {
+  margin-bottom: 10px;
+}
+
+.instructions {
+  width: 80%;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 10px 0;
+}
